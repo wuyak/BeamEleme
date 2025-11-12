@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# MATLAB
+*.asv
+*.m~
+slprj/
+
+# 个人脚本
+run_matlab.py
+
+# 性能测试结果
+*.png
+*.jpg
+benchmark_*.mat
+
+# 例外：允许跟踪文档图片
+!src/+workflow/tests/convergence/output/*.png
+!PP_N100_mode_1_2_bending_shear.png
+
+# 临时文件
+temp/
+tmp/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+
+# 缓存和归档
+.cache/
+archive/
