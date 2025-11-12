@@ -101,12 +101,6 @@ Mode   FEM (Hz)   Analytical (Hz)   Error     MAC
 💾 Results cached to: .cache/4BB0F885_PP_N100_M10/
 ```
 
-### 模态振型可视化
-
-![模态振型](PP_N100_mode_1_2_bending_shear.png)
-
-*弯曲-剪切模态振型（模态1-2，简支边界）：有限元结果（蓝色实线）vs. 解析解（红色虚线）*
-
 ### 缓存结构说明
 
 **缓存地址格式**：`.cache/<hash>_<BC>_N<NElem>_M<n_modes>/`
@@ -132,13 +126,25 @@ Mode   FEM (Hz)   Analytical (Hz)   Error     MAC
     └── (同样三个文件)
 ```
 
+### 模态振型可视化
+
+<div align="center">
+  <img src="PP_N100_mode_1_2_bending_shear.png" width="700" alt="弯曲-剪切模态振型对比">
+  <p><i>图1：弯曲-剪切模态振型（模态1-2，简支边界）— 有限元结果（蓝色实线）vs. 解析解（红色虚线）</i></p>
+</div>
+
 ### 收敛性分析
 
-有限元求解器在所有边界条件下均展现出优秀的收敛性：
+有限元求解器在所有边界条件下均展现出优秀的收敛性。
 
-![收敛性分析](src/+workflow/tests/convergence/output/convergence_rectangular_0.2x0.1.png)
+> **完整收敛性测试代码**：[`src/+workflow/tests/convergence/`](src/+workflow/tests/convergence/)
 
-*矩形梁收敛性测试（0.2m × 0.1m，50个模态）：频率误差随单元数增加而降低。所有10种边界条件均表现出一致的二阶收敛特性。*
+以矩形截面梁（0.2m × 0.1m，50个模态）为例，收敛性测试结果如下：
+
+<div align="center">
+  <img src="src/+workflow/tests/convergence/output/convergence_rectangular_0.2x0.1.png" alt="收敛性分析">
+  <p><i>图2：矩形截面梁收敛性测试（0.2m × 0.1m，50个模态）— 最大频率误差在10种边界条件均表现出一致的二阶收敛特性</i></p>
+</div>
 
 ---
 

@@ -100,13 +100,6 @@ Mode   FEM (Hz)   Analytical (Hz)   Error     MAC
 
 💾 Results cached to: .cache/4BB0F885_PP_N100_M10/
 ```
-
-### Mode Shape Visualization
-
-![Mode Shapes](PP_N100_mode_1_2_bending_shear.png)
-
-*Bending-shear mode shapes (Mode 1-2, PP boundary): FEM results (blue) vs. Analytical solution (red dashed)*
-
 ### Cache Structure
 
 **Cache Path Format**: `.cache/<hash>_<BC>_N<NElem>_M<n_modes>/`
@@ -132,13 +125,26 @@ Mode   FEM (Hz)   Analytical (Hz)   Error     MAC
     └── (same three files)
 ```
 
+### Mode Shape Visualization
+
+<div align="center">
+  <img src="PP_N100_mode_1_2_bending_shear.png" width="700" alt="Bending-shear mode shapes comparison">
+  <p><i>Figure 1: Bending-shear mode shapes (Mode 1-2, PP boundary) — FEM results (blue) vs. Analytical solution (red dashed)</i></p>
+</div>
+
+
 ### Convergence Analysis
 
-The FEM solver demonstrates excellent convergence across all boundary conditions:
+The FEM solver demonstrates excellent convergence across all boundary conditions.
 
-![Convergence](src/+workflow/tests/convergence/output/convergence_rectangular_0.2x0.1.png)
+> **Full convergence test code**: [`src/+workflow/tests/convergence/`](src/+workflow/tests/convergence/)
 
-*Convergence test for rectangular beam (0.2m × 0.1m, 50 modes): Frequency error decreases with increasing element count. All 10 boundary conditions show consistent second-order convergence.*
+Below shows the convergence test results for a rectangular beam (0.2m × 0.1m, 50 modes):
+
+<div align="center">
+  <img src="src/+workflow/tests/convergence/output/convergence_rectangular_0.2x0.1.png" alt="Convergence analysis">
+  <p><i>Figure 2: Convergence test for rectangular beam (0.2m × 0.1m, 50 modes) — Maximum frequency error shows consistent second-order convergence across all 10 boundary conditions</i></p>
+</div>
 
 ---
 
