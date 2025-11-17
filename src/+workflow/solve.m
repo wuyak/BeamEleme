@@ -115,7 +115,6 @@ else
 end
 
 %% 循环求解所有物理形态
-matrix_methods = {'axial', 'torsion', 'bending_shear'};
 for i = 1:length(matrix_methods)
     method = matrix_methods{i};
 
@@ -170,10 +169,6 @@ for i = 1:length(matrix_methods)
 end
 
 % 保存元数据
-% 确保workflow_root目录存在（加载缓存时可能只有子目录）
-if ~exist(workflow_root, 'dir')
-    mkdir(workflow_root);
-end
 
 metadata.BC = BC;
 metadata.NElem = NElem;
