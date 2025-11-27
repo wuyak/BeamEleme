@@ -76,9 +76,13 @@ BeamElem/
 ├── reference/                          # 理论基础文献
 │   └── REFERENCES.md
 └── docs/                               # 项目文档
+    ├── project_structure.md            # 本文档
     ├── code_corrections.md
     ├── analytical_solution_limitations.md
-    └── project_structure.md            # 本文档
+    ├── timoshenko_beam_theory.md       # Timoshenko 梁理论推导
+    ├── axial_torsion_modes.md          # 轴向与扭转振动模态
+    ├── bending_shear_matrices.md       # 刚度矩阵与质量矩阵推导
+    └── bending_shear_analytical.md     # 解析解推导
 ```
 
 ## 快速查找

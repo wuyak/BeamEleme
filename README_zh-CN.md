@@ -167,9 +167,13 @@ BeamElem/
 ├── reference/                          # 理论基础文献
 │   └── REFERENCES.md
 └── docs/                               # 项目文档
+    ├── project_structure.md            # 详细目录结构
     ├── code_corrections.md
     ├── analytical_solution_limitations.md
-    └── project_structure.md            # 详细目录结构
+    ├── timoshenko_beam_theory.md       # Timoshenko 梁理论推导
+    ├── axial_torsion_modes.md          # 轴向与扭转振动模态
+    ├── bending_shear_matrices.md       # 刚度矩阵与质量矩阵推导
+    └── bending_shear_analytical.md     # 解析解推导
 ```
 
 > 📖 详细目录结构请参考：[`docs/project_structure.md`](docs/project_structure.md)
@@ -186,3 +190,9 @@ BeamElem/
 - **Hutchinson (2001)** — 剪切修正系数
 
 > 📖 所有文献和代码引用详见：[`reference/REFERENCES.md`](reference/REFERENCES.md)
+>
+> 📖 详细理论推导文档：
+> - [`docs/timoshenko_beam_theory.md`](docs/timoshenko_beam_theory.md) — Timoshenko 梁理论
+> - [`docs/bending_shear_matrices.md`](docs/bending_shear_matrices.md) — 有限元矩阵推导
+> - [`docs/bending_shear_analytical.md`](docs/bending_shear_analytical.md) — 解析解推导
+> - [`docs/axial_torsion_modes.md`](docs/axial_torsion_modes.md) — 轴向/扭转模态

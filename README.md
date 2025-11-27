@@ -167,9 +167,13 @@ BeamElem/
 ├── reference/                          # Theoretical references
 │   └── REFERENCES.md
 └── docs/                               # Project documentation
+    ├── project_structure.md            # Detailed directory structure
     ├── code_corrections.md
     ├── analytical_solution_limitations.md
-    └── project_structure.md            # Detailed directory structure
+    ├── timoshenko_beam_theory.md       # Timoshenko beam theory derivation
+    ├── axial_torsion_modes.md          # Axial and torsional vibration modes
+    ├── bending_shear_matrices.md       # Stiffness and mass matrices derivation
+    └── bending_shear_analytical.md     # Analytical solution derivation
 ```
 
 > 📖 For detailed directory structure, see: [`docs/project_structure.md`](docs/project_structure.md)
@@ -186,3 +190,9 @@ The project is based on the following core references:
 - **Hutchinson (2001)** — Shear correction coefficients
 
 > 📖 For all references and code citations, see: [`reference/REFERENCES.md`](reference/REFERENCES.md)
+>
+> 📖 For detailed theoretical derivations, see:
+> - [`docs/timoshenko_beam_theory.md`](docs/timoshenko_beam_theory.md) — Timoshenko beam theory
+> - [`docs/bending_shear_matrices.md`](docs/bending_shear_matrices.md) — FEM matrices derivation
+> - [`docs/bending_shear_analytical.md`](docs/bending_shear_analytical.md) — Analytical solution
+> - [`docs/axial_torsion_modes.md`](docs/axial_torsion_modes.md) — Axial/torsional modes
